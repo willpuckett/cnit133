@@ -3,7 +3,9 @@ layout: layouts/page.njk
 title: Homework
 ---
 # CNIT 133 Homework
-## Fall 2021.
+
+## Fall 2021
+
 With Maura Devlin-Clancy.  
 A collection of problem solutions by Will Puckett.
 
