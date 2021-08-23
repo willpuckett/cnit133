@@ -6,14 +6,15 @@
   "scripts": {
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
-    "clean": "npx del _site",
+    "clean": "npx del cnit133",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy && prettier --write _site",
+    "build": "eleventy && prettier --write cnit133",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "pretty": "prettier --write _site"
+    "pretty": "prettier --write _site",
+    "publish": "scp -r cnit133 wpuckett@hills.ccsf.edu:/students/wpuckett/public_html"
   },
   "keywords": [],
   "author": "",

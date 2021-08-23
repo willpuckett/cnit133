@@ -9,7 +9,7 @@ module.exports = eleventyConfig => {
     return {
       markdownTemplateEngine: "njk",
       dir: {
-        output: '_site'
+        output: 'cnit133'
       }
     };
   };
