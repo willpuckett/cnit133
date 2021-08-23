@@ -14,5 +14,6 @@ body {
 
 .button:hover,
 button:hover {
-        border-color: magenta;
-  }
+        border-color: orchid;
+        background-color: whitesmoke;
+}
