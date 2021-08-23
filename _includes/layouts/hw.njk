@@ -12,9 +12,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="Skeleton/css/normalize.css">
-  <link rel="stylesheet" href="Skeleton/css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="../Skeleton/css/normalize.css">
+  <link rel="stylesheet" href="../Skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -24,19 +24,9 @@
 </head>
 <body>
 <div class="container">
-    <h1>CNIT 133 Homework</h1>
-    <h2>Fall 2021</h2>
-    <p>With Maura Devlin-Clancy. <br> A collection of problem solutions by Will Puckett.</p>
-<ul>
-    <li class="button"><a href="hw2.html">Homework 2</a></li>
-    <li class="button"><a href="hw3.html">Homework 3</a></li>
-    <li class="button"><a href="hw4.html">Homework 4</a></li>
-    <li class="button"><a href="hw5.html">Homework 5</a></li>
-    <li class="button"><a href="hw6.html">Homework 6</a></li>
-    <li class="button"><a href="hw7.html">Homework 7</a></li>
-    <li class="button"><a href="hw8.html">Homework 8</a></li>
-</ul>
-</div>
+
+{{ content | safe }}
+
 <footer class="footer">
     Content validated by W3C <a href="https://validator.w3.org">Markup Validation Service.</a> <br> Styled with <a href="https://github.com/dhg/Skeleton">Skeleton: A Dead Simple, Responsive Boilerplate</a>
 </footer>
