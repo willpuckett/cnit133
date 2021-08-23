@@ -11,3 +11,8 @@ body {
     color: gray;
     text-align: center;
   }
+
+.button:hover,
+button:hover {
+        border-color: magenta;
+  }
