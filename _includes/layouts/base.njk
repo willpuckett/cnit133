@@ -16,17 +16,20 @@
 
         <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="favicon.png">
+    
+    <title>
+    {% if title %}
+        Homework {{ page.fileSlug }} | CNIT 133
+    {% else %}
+        CNIT 133 Homework
+    {% endif %}
+    </title>
 
-        <title>CNIT 133 Homework</title>
     </head>
+
     <body>
 
         {{ content | safe }}
-
-        <footer class="footer">
-            Content validated by W3C <a href="https://validator.w3.org">Markup Validation Service.</a>
-            <br> Styled with <a href="https://github.com/dhg/Skeleton">Skeleton: A Dead Simple, Responsive Boilerplate</a>.
-        </footer>
 
     </body>
 </html>

@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run clean",
+    "prebuild": "npm run clean",
+    "clean": "npx del _site",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy && prettier --write _site",
     "watch": "eleventy --watch",
@@ -17,6 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "del-cli": "^4.0.1",
     "prettier": "^2.3.2"
   }
 }

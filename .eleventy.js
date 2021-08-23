@@ -7,6 +7,7 @@ module.exports = eleventyConfig => {
   
     // Returning something from the configuration function is optional
     return {
+      markdownTemplateEngine: "njk",
       dir: {
         output: '_site'
       }

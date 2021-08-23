@@ -1,4 +1,5 @@
 { 
-    "layout": "layouts/home.njk",
-    "permalink": "/{{ page.fileSlug }}.html"
+    "layout": "layouts/page.njk",
+    "title": "Homework",
+    "permalink": "/hw{{ page.fileSlug }}.html"
 }
