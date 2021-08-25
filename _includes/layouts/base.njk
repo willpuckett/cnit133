@@ -7,7 +7,10 @@
         <meta name="description" content="Maximum JavaScript Homework for people wishing to explore learning.">
 
         <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        {# <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> #}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 
         <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="css/normalize.css">
@@ -16,14 +19,14 @@
 
         <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="favicon.png">
-    
-    <title>
-    {% if title %}
+
+        <title>
+            {% if title %}
         Homework {{ page.fileSlug }} | CNIT 133
     {% else %}
         CNIT 133 Homework
     {% endif %}
-    </title>
+        </title>
 
     </head>
 
