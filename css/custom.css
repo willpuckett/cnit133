@@ -12,8 +12,45 @@ body {
     text-align: center;
   }
 
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: gray;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+
+  a:hover {
+    border-color: orchid;
+    background-color: whitesmoke;
+  }
+
+
+
 .button:hover,
 button:hover {
         border-color: orchid;
         background-color: whitesmoke;
 }
+
+
+/* From number validation for 2.2 */
+div {
+  margin-bottom: 10px;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+

@@ -1,0 +1,44 @@
+{# <div class="container">
+<nav class="row">
+<div class="five column button"><a href="index.html">Home</a></div>
+{% for i in range(2,9) %}
+    <div class="one columns button"><a href="hw{{ i }}.html">HW {{ i }}</a></div>
+{% endfor %}
+</nav>
+</div> #}
+
+{# <div class="nav">
+  <div class="row">
+    <div class="one columns button"><a href="index.html">⚓️</a></div>
+    {% for i in range(2,9) %}
+    <div class="one columns button"><a href="hw{{ i }}.html">{{ i }}</a></div>
+    {% endfor %}
+  </div>
+</div> #}
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div id="navbar" class="navbar">
+<a href="index.html">⚓️</a>
+    {% for i in range(2,9) %}
+     | <a href="hw{{ i }}.html"> HW {{ i }}  </a>
+    {% endfor %}
+</div>

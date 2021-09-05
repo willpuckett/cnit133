@@ -23,5 +23,8 @@
     "@11ty/eleventy": "^0.12.1",
     "del-cli": "^4.0.1",
     "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "highlight.js": "^11.2.0"
   }
 }
