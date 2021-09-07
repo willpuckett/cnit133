@@ -1,64 +1,62 @@
 body {
-    background-color: white;
-    margin-top: 10%;
+  background-color: white;
+  margin-top: 12%;
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: whitesmoke;
-    color: gray;
-    text-align: center;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  color: gray;
+  text-align: center;
+}
 
-  .navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: whitesmoke;
-    color: gray;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    overflow: hidden;
-    z-index: 9999;
-  }
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  color: gray;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  z-index: 9999;
+}
 
-  a:hover {
-    border-color: orchid;
-    background-color: whitesmoke;
-  }
-
-
+a:hover {
+  border-color: orchid;
+  background-color: whitesmoke;
+}
 
 .button:hover,
 button:hover {
-        border-color: orchid;
-        background-color: whitesmoke;
+  border-color: orchid;
+  background-color: whitesmoke;
 }
-
 
 /* From number validation for 2.2 */
-div {
+/* div {
   margin-bottom: 10px;
-}
+} */
 
-input:invalid+span:after {
-  content: '✖';
+input:invalid + span:after {
+  content: "✖";
   padding-left: 5px;
   color: orchid;
 }
 
-input:valid+span:after {
-  content: '✓';
+input:valid + span:after {
+  content: "✓";
   padding-left: 5px;
-  color: #33C3F0;
+  color: #33c3f0;
 }
 
 /* For slider info */
-#panel, #flip {
+#panel,
+#flip {
   /* padding: 5px; */
   text-align: left;
   /* background-color: white; */
@@ -70,7 +68,6 @@ input:valid+span:after {
   display: none;
 }
 
-
 /* Get rid of number up/down buttons */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -80,6 +77,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
