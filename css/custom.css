@@ -80,3 +80,14 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+ul {
+  list-style: none inside; 
+}
+
+li::before {
+  content: "✓"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: #33C3F0; /* Or a color you prefer */
+}
+
