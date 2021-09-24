@@ -1,0 +1,6 @@
+<h2>Homework {{ page.fileSlug | first }}</h2>
+  <div class="row">
+  {% for i in range(1,5) -%}
+      <div class="three columns button"><a href="hw{{ page.fileSlug | first }}.{{ i }}.html">Part {{ i }}</a></div>
+  {%- endfor %}
+  </div>

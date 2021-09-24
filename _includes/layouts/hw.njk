@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 templateClass: tmpl-page
 ---
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+
+{# <script>
 var hljs = require('highlight.js');
 
 // If you know the language
@@ -11,27 +11,25 @@ var hljs = require('highlight.js');
 
 // Automatic language detection
 hljs.highlightAuto(code).value;
-</script>
+</script> #}
 
 <!-- .container is main centered wrapper -->
 <div class="container">
         {% include 'partials/nav.njk' %}
-
-<h2>Homework 2</h2>
-  <div class="row">
-    <div class="three columns button"><a href="hw2.1.html">Part 1</a></div>
-    <div class="three columns button"><a href="hw2.2.html">Part 2</a></div>
-    <div class="three columns button"><a href="hw2.3.html">Part 3</a></div>
-    <div class="three columns button"><a href="hw2.ex.html">Ex Cr</a></div>
-
-  </div>
 </div>
-
 
 <div class="container">
-
-{{ content | safe }}
-
-{% include 'partials/footer.njk' %}
-
+    {% include "partials/parts.njk" %}
+    {{ content | safe }}
 </div>
+
+<br>
+
+
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>

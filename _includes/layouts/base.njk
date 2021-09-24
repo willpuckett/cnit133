@@ -28,16 +28,16 @@
         CNIT 133 Homework
     {% endif %}
         </title>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
         <div class="container">
-
             <h1>CNIT 133 Homework</h1>
-
         </div>
+
         {{ content | safe }}
 
+        {% include 'partials/footer.njk' %}
     </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/home.njk
 title: Homework
 ---
 ## Fall 2021
@@ -15,7 +15,5 @@ A collection of problem solutions by Will Puckett.
 {%- endfor %}
 </ul>
 
-<br>
-<br>
 <br>
 <br>
