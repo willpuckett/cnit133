@@ -1,5 +1,5 @@
 { 
     "layout": "layouts/hw.njk",
-    "title": "Homework {{ page.fileSlug }}",
+    "title": "Homework {{ page.fileSlug | first }}",
     "permalink": "/hw{{ page.fileSlug }}.html"
 }
