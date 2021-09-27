@@ -18,10 +18,9 @@ function myFunction() {
 }
 </script>
 
-
 <div id="navbar" class="navbar">
 <a href="index.html">⚓️</a>
-    {% for i in range(2,9) %}
-     | <a href="hw{{ i }}.html"> HW {{ i }}  </a>
+    {% for chapter in collections.homework %}
+     | <a href="hw{{ chapter.fileSlug }}.html"> HW {{ chapter.fileSlug }}  </a>
     {% endfor %}
 </div>

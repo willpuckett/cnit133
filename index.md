@@ -8,7 +8,7 @@ title: Homework
 A collection of problem solutions by Will Puckett.
 
 {# <ul>
-{% for i in range(2,9) -%}
+{% for i in collections.homework -%}
     <li class="button"><a href="hw{{ i }}.html">Homework {{ i }}</a></li>
 {% else %}
     <li class="button">The Dog Ate My..</li>
@@ -16,8 +16,8 @@ A collection of problem solutions by Will Puckett.
 </ul> #}
 
   <div class="row">
-  {% for i in range(2,9) -%}
-      <div class="three columns button"><a href="hw{{ i }}.html">Homework {{ i }} </a></div>
+  {% for homework in collections.homework -%}
+      <div class="four columns button"><a href="hw{{ homework.fileSlug }}.html">Homework {{ homework.fileSlug }} </a></div>
   {%- endfor %}
   </div>
 <br>
