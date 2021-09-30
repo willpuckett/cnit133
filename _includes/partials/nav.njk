@@ -1,10 +1,16 @@
+<div id="navbar" class="navbar">
+<a href="index.html">⚓️</a>
+    {% for chapter in collections.homework %}
+     | <a href="hw{{ chapter.fileSlug }}.html"> HW {{ chapter.fileSlug }}  </a>
+    {% endfor %}
+</div>
+
 <script>
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
-
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
@@ -17,10 +23,3 @@ function myFunction() {
   }
 }
 </script>
-
-<div id="navbar" class="navbar">
-<a href="index.html">⚓️</a>
-    {% for chapter in collections.homework %}
-     | <a href="hw{{ chapter.fileSlug }}.html"> HW {{ chapter.fileSlug }}  </a>
-    {% endfor %}
-</div>

@@ -1,5 +1,6 @@
 { 
     "layout": "layouts/hw.njk",
     "title": "Homework {{ page.fileSlug | first }}",
-    "permalink": "/hw{{ page.fileSlug }}.html"
+    "permalink": "/hw{{ page.fileSlug }}.html",
+    "tags": "parts"
 }

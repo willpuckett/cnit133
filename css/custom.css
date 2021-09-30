@@ -90,3 +90,11 @@ li::before {
   padding-right: 8px;
   color: #33C3F0; /* Or a color you prefer */
 }
+
+
+.ui-tooltip-content {
+  font-size: 80%;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #222;
+}
