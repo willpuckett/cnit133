@@ -2,9 +2,9 @@
 
   <div class="row">
   {% for part in collections.parts -%}
-    {% if part.fileSlug | first == page.fileSlug | first %}
+    {% if part.fileSlug | first == page.fileSlug | first -%}
       <div class="three columns button"><a href="{{ part.url }}">Part {{ part.fileSlug | last }}</a></div>
-    {% endif %}
+    {%- endif %}
   {%- endfor %}
   </div>
 
