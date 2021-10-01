@@ -331,7 +331,8 @@ td:first-child {
   padding-left: 7%; }
 th:last-child,
 td:last-child {
-  padding-right: 5%; }
+  padding-right: none;
+ }
 
 
 /* Spacing
