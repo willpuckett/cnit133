@@ -48,7 +48,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .container {
     width: 80%; }
   .column,
@@ -328,10 +328,10 @@ td {
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
-  padding-left: .5; }
+  padding-left: 7%; }
 th:last-child,
 td:last-child {
-  padding-right: .5; }
+  padding-right: 5%; }
 
 
 /* Spacing
