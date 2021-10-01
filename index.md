@@ -4,7 +4,7 @@ title: Homework
 ---
 ## Fall 2021
 
-*with the [highly-rated](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1117608) [Maura Devlin-Clancy](https://sites.google.com/mail.ccsf.edu/maura-cnit/).*  
+*with the [highly-regarded](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1117608) [Maura Devlin-Clancy](https://sites.google.com/mail.ccsf.edu/maura-cnit/).*  
 A collection of problem solutions by Will Puckett.
 
 {# <ul>
