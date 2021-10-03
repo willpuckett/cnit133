@@ -81,11 +81,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-ul {
+ul.checks {
   list-style: none inside; 
 }
 
-li::before {
+.checks li::before {
   content: "✓"; /* Insert content that looks like bullets */
   padding-right: 8px;
   color: #33C3F0; /* Or a color you prefer */
