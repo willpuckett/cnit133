@@ -125,8 +125,12 @@ ul.checks {
 .column table {
   table-layout: fixed;
   border-collapse: collapse;
-  width: 90%;
+  width: 100%;
  }
+
+.one-half table {
+  width: 90%;
+}
 
 /* Smaller than 750px */
 @media (max-width: 750px) {
