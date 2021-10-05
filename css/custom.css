@@ -2,6 +2,8 @@ body {
   background-color: white;
   margin-top: 12%;
 }
+
+
 .footer {
   position: fixed;
   left: 0;
@@ -42,17 +44,27 @@ button:hover {
   margin-bottom: 10px;
 } */
 
-input:invalid + span:after {
+input:invalid {
+  background-color: #f6dff5;
+}
+input:valid {
+  background-color: #D1f1fb;
+}
+/* input:invalid + span:after {
   content: "✖";
   padding-left: 5px;
   color: orchid;
+  display: inline-block;
+  width: 5px;
 }
 
 input:valid + span:after {
   content: "✓";
   padding-left: 5px;
   color: #33c3f0;
-}
+  display: inline-block;
+  width: 5px;
+} */
 
 /* For slider info */
 #panel,
@@ -101,10 +113,22 @@ ul.checks {
 
 .diamond {
   font-family: 'Courier New', Courier, monospace !important;
-  font-size: x-large !important;
+  font-size: xx-large !important;
   font-weight: 600 !important;
   line-height: 60% !important;
   color: #33c3f0;
+}
+
+/* Smaller than 750px */
+@media (max-width: 750px) {
+    table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th:first-child,
+td:first-child {
+  padding-left: 5%; }
 }
 
 /* Bigger than 550 */

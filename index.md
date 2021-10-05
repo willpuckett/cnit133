@@ -4,7 +4,7 @@ title: Homework
 ---
 ## Fall 2021
 
-*with the [highly-regarded](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=1117608) [Maura Devlin-Clancy](https://sites.google.com/mail.ccsf.edu/maura-cnit/).*  
+*with [Maura Devlin-Clancy](https://sites.google.com/mail.ccsf.edu/maura-cnit/).*  
 A collection of problem solutions by Will Puckett.
 
 <ul>
@@ -14,6 +14,7 @@ A collection of problem solutions by Will Puckett.
     <li class="button">The Dog Ate My..</li>
 {%- endfor %}
 </ul>
+
 {#
   <div class="row">
   {% for homework in collections.homework -%}
@@ -21,5 +22,6 @@ A collection of problem solutions by Will Puckett.
   {%- endfor %}
   </div>
 #}  
+
 <br>
 <br>
