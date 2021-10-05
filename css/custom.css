@@ -103,6 +103,9 @@ ul.checks {
   color: #33C3F0; /* Or a color you prefer */
 }
 
+.smoke-back {
+  background-color: whitesmoke !important;
+}
 
 .ui-tooltip-content {
   font-size: 80%;
@@ -118,6 +121,12 @@ ul.checks {
   line-height: 60% !important;
   color: #33c3f0;
 }
+
+.column table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 90%;
+ }
 
 /* Smaller than 750px */
 @media (max-width: 750px) {
