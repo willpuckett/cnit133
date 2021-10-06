@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "sideEffects": ["*.css"],
   "scripts": {
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
