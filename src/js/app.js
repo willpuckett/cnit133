@@ -1,7 +1,9 @@
 // CSS
 require('../css/normalize.css');
 require('../css/skeleton.css');
-require('jquery-ui/themes/base/all.css');
+require('jquery-ui/themes/base/draggable.css');
+require('jquery-ui/themes/base/tooltip.css');
+// require('jquery-ui/themes/base/all.css');
 require('../css/custom.css');
 
 
