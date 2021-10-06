@@ -6,22 +6,30 @@
   "scripts": {
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
-    "clean": "npx del cnit133",
-    "build": "npm-run-all 11ty:build pretty",
-    "11ty:build": "eleventy",
-    "watch": "eleventy --watch",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy",
-    "pretty": "prettier --write cnit133"
+    "clean": "rimraf _site",
+    "serve:webpack": "webpack --mode development --watch",
+    "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "start": "npm-run-all --parallel serve:*",
+    "build:webpack": "webpack --mode production",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build": "run-s build:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "css-loader": "^6.3.0",
     "del-cli": "^4.0.1",
+    "jquery-ui": "^1.12.1",
+    "mini-css-extract-plugin": "^2.4.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.8.0"
   },
   "dependencies": {
     "highlight.js": "^11.2.0",
