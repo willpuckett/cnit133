@@ -15,13 +15,4 @@ A collection of problem solutions by Will Puckett.
 {%- endfor %}
 </ul>
 
-{#
-  <div class="row">
-  {% for homework in collections.homework -%}
-      <div class="four columns button"><a href="hw{{ homework.fileSlug }}.html">Homework {{ homework.fileSlug }} </a></div>
-  {%- endfor %}
-  </div>
-#}  
 
-<br>
-<br>
