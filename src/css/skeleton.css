@@ -326,11 +326,13 @@ td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid whitesmoke; }
-th:first-child,
-td:first-child {
-  padding-left: 7%; }
-th:last-child,
-td:last-child {
+th {
+  border-bottom: 1px solid #c0c0c0; } */
+  th:first-child,
+  td:first-child {
+    padding-left: 7%; }
+    th:last-child,
+    td:last-child {
   padding-right: 7%;
  }
 
