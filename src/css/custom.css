@@ -146,7 +146,9 @@ ul.checks {
     border-collapse: collapse;
     width: 100%;
   }
-  th:first-child,
+  /* th:first-child,
 td:first-child {
-  padding-left: 5%; }
+  padding-left: 5%;
+  padding-right: 1%;
+ } */
 }

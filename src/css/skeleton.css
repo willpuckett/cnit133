@@ -325,13 +325,13 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid whitesmoke; }
 th:first-child,
 td:first-child {
   padding-left: 7%; }
 th:last-child,
 td:last-child {
-  padding-right: none;
+  padding-right: 7%;
  }
 
 
