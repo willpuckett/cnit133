@@ -269,9 +269,11 @@ select:focus {
   outline: 0; }
 label,
 legend {
-  display: block;
+  display: inline-flex;
   margin-bottom: .5rem;
-  font-weight: 600; }
+  font-weight: 600; 
+  padding-right: 10% ;
+}
 fieldset {
   padding: 0;
   border-width: 0; }
