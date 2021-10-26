@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
@@ -24,6 +26,7 @@
     "css-loader": "^6.3.0",
     "css-minimizer-webpack-plugin": "^3.1.1",
     "del-cli": "^4.0.1",
+    "html-minifier-terser": "^6.0.2",
     "jquery": "^3.6.0",
     "jquery-ui": "^1.12.1",
     "mini-css-extract-plugin": "^2.4.1",
