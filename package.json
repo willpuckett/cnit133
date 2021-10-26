@@ -15,7 +15,7 @@
     "start": "npm-run-all --parallel serve:*",
     "build:webpack": "webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build:html-minify": "html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --input-dir ./_site --output-dir ./_site --file-ext html",
+    "build:html-minify": "html-minifier-terser --collapse-whitespace --remove-comments --remove-redundant-attributes --decode-entities --conservative-collapse --keep-closing-slash --remove-script-type-attributes --minify-css true --minify-js true --input-dir ./_site --output-dir ./_site --file-ext html",
     "build": "run-s build:*"
   },
   "keywords": [],
