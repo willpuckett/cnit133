@@ -14,8 +14,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/raleway-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/raleway-v22-latin-regular.woff2') format('woff2'), 
+       url('../fonts/raleway-v22-latin-regular.woff') format('woff'); 
   font-display: auto;
 }
 /* raleway-600 - latin */
@@ -24,8 +24,8 @@
   font-style: normal;
   font-weight: 600;
   src: local(''),
-       url('../fonts/raleway-v22-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/raleway-v22-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/raleway-v22-latin-600.woff2') format('woff2'),
+       url('../fonts/raleway-v22-latin-600.woff') format('woff'); 
   font-display: auto;
 }
 
@@ -68,6 +68,19 @@ button:hover {
   background-color: whitesmoke;
   border-radius: 5px;
   border: 1px groove orchid;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  text-align: center;
+  gap: 10px;
+}
+
+.button-row .button, .button-row .button-primary, .button-row input[type=button], .button-row input[type=reset], .button-row select {
+  flex-grow: 1;
 }
 
 input:invalid {
@@ -150,15 +163,23 @@ ul.checks {
 }
 
 /* Smaller than 750px */
-@media (max-width: 750px) {
-    table {
+@media (max-width: 850px) {
+    .one-half table {
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
   }
   /* th:first-child,
-td:first-child {
-  padding-left: 5%;
-  padding-right: 1%;
- } */
+  td:first-child {
+    padding-left: 5%;
+    padding-right: 1%;
+  } */
+}
+
+/* Smaller than 500px  */
+@media (max-width: 500px) {
+  .full-text { display: none; }
+  body {
+    margin-top: 22%;
+  }
 }
