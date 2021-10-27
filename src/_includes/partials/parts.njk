@@ -1,9 +1,9 @@
 <h2>Homework {{ page.fileSlug | first }}</h2>
 
-  <div class="row">
+  <div class="parts button-row">
   {% for part in collections.parts -%}
     {% if part.fileSlug | first == page.fileSlug | first -%}
-      <div class="three columns button"><a href="{{ part.url }}">Part {{ part.fileSlug | last }}</a></div>
+      <a class="button" href="{{ part.url }}">Part {{ part.fileSlug | last }}</a>
     {%- endif %}
   {%- endfor %}
   </div>

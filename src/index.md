@@ -7,12 +7,15 @@ title: Homework
 *with [Maura Devlin-Clancy](https://sites.google.com/mail.ccsf.edu/maura-cnit/).*  
 A collection of problem solutions by Will Puckett.
 
-<ul>
+<span class="splash button-row">
 {% for homework in collections.homework -%}
-    <li class="button"><a href="hw{{ homework.fileSlug }}.html">Homework {{ homework.fileSlug }}</a></li>
+    <a class="button" href="hw{{ homework.fileSlug }}.html">Homework {{ homework.fileSlug }}</a>
 {% else %}
-    <li class="button">The Dog Ate My..</li>
+    <a class="button">The Dog Ate My..</a>
 {%- endfor %}
-</ul>
+</span>
+
+<br>
+<br>
 
 

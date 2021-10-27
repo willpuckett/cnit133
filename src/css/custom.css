@@ -50,21 +50,57 @@ body {
   top: 0;
   width: 100%;
   background-color: whitesmoke;
-  color: gray;
+  color: #33C3F0;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   overflow: hidden;
   z-index: 9999;
 }
 
-a:hover {
-  border-color: orchid;
-  background-color: whitesmoke;
+.splash {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  gap: 40px 40px;
 }
 
-.button:hover,
+.splash .button {
+  flex-basis: 250px;
+  display: block;
+  height: 38px;
+  padding: 0 30px;
+  text-align: center;
+  line-height: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+
+input[type=button], input[type=reset], .button {
+  color: #33c3f0;
+  border: 1px solid #bbb;
+  padding: auto;
+  background-color: white;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus, a:hover {
+  border-color: orchid;
+  /* background-color: whitesmoke; */
+}
+
+input[type=button]:hover, input[type=reset]:hover, .button:hover,
 button:hover {
+  color: #1EAEDB;
   background-color: whitesmoke;
   border-radius: 5px;
   border: 1px groove orchid;
@@ -162,12 +198,21 @@ ul.checks {
   width: 90%;
 }
 
-/* Smaller than 750px */
+/* Smaller than 850px */
 @media (max-width: 850px) {
     .one-half table {
     table-layout: fixed;
     border-collapse: collapse;
     width: 100%;
+  }
+  .navbar .button {
+    display: inline-block;
+    height: 38px;
+    padding: 0 15px;
+    border-radius: 4px;
+  }
+  .navbar {
+    padding-bottom: 7px;
   }
   /* th:first-child,
   td:first-child {
@@ -178,8 +223,14 @@ ul.checks {
 
 /* Smaller than 500px  */
 @media (max-width: 500px) {
-  .full-text { display: none; }
+  .full-text { 
+    display: none; 
+  }
   body {
     margin-top: 22%;
+  }
+  .parts {
+    flex-direction: column;
+    gap: 0px;
   }
 }
