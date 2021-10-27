@@ -65,8 +65,9 @@ a:hover {
 
 .button:hover,
 button:hover {
-  border-color: orchid;
   background-color: whitesmoke;
+  border-radius: 5px;
+  border: 1px groove orchid;
 }
 
 input:invalid {
@@ -74,6 +75,14 @@ input:invalid {
 }
 input:valid {
   background-color: #D1f1fb;
+}
+
+input[type=tel], input[type=text], input[type=textarea], input[type=number], textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px groove #D1f1fb;
+  padding: 0.5em 10px;
+  line-height: normal;
 }
 
 /* For slider info */
@@ -127,6 +136,7 @@ ul.checks {
   font-weight: 600 !important;
   line-height: 60% !important;
   color: #33c3f0;
+  text-align: center;
 }
 
 .column table {
