@@ -16,8 +16,22 @@ function myFunction() {
 
 // The panel js for assignments. Not technically needed on all pages,
 // But it seemed nice to get it out of the template....
-window.addEventListener('load', function () {
-    $("#flip").on("click", function(){
-      $("#panel").slideToggle("slow");
-    });
-  });       
+
+var acc = document.getElementsByClassName("accordian");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}

@@ -76,6 +76,25 @@ body {
   box-sizing: border-box;
 }
 
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 10s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordian:hover {
+  border-bottom: 1px solid orchid;
+}
+
+/* Hide the accoridan panel by default */
+.panel {
+  display: none;
+  overflow: hidden;
+}
 
 input[type=button], input[type=reset], .button {
   color: #33c3f0;
@@ -134,17 +153,6 @@ input[type=tel], input[type=text], input[type=textarea], input[type=number], tex
   line-height: normal;
 }
 
-/* For slider info */
-#panel,
-#flip {
-  text-align: left;
-
-}
-
-#panel {
-  display: none;
-}
-
 /* Get rid of number up/down buttons */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -172,11 +180,37 @@ ul.checks {
   background-color: whitesmoke !important;
 }
 
-.ui-tooltip-content {
-  font-size: 80%;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 1px;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #222;
+  position: absolute;
+  z-index: 1;
+  border-bottom: 1px solid orchid; /* If you want dots under the hoverable text */
+  width: 220px;
+  bottom: 80%;
+  left: 50%; 
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 .diamond {
@@ -197,6 +231,8 @@ ul.checks {
 .one-half table {
   width: 90%;
 }
+
+
 
 /* Smaller than 850px */
 @media (max-width: 850px) {

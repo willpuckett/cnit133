@@ -1,7 +1,7 @@
 ### Title
 
-<p id="flip">Click to show/hide assignment.</p>
-<div id="panel">
+<p class="accordian">Click to show/hide assignment.</p>
+<div class="panel">
 
 Assignment text
 
