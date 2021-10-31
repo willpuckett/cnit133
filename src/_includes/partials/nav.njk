@@ -1,6 +1,8 @@
 <div id="navbar" class="navbar">
+{# <div class="container button-row" style=";"> #}
 <a class="button" href="index.html">⚓️</a>
     {% for chapter in collections.homework %}
      <a class="button" href="hw{{ chapter.fileSlug }}.html"><span class="full-text">HW</span> {{ chapter.fileSlug }}</a>
     {% endfor %}
+    {# </div> #}
 </div>

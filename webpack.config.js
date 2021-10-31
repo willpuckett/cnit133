@@ -2,11 +2,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-  entry: './src/js/app.js',
+  entry: {
+	  app: './src/js/app.js',
+	  jquery: './src/js/jquery.js'
+	},
   mode: 'development',
   output: {
+	filename: '[name].bundle.js',
 	path: `${__dirname}/_site/assets`,
-	filename: 'bundle.js',
   },
   plugins: [new MiniCssExtractPlugin()],
   module: {
