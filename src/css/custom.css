@@ -77,12 +77,13 @@ body {
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+.accordian {
   cursor: pointer;
   width: 100%;
-  border: none;
+  /* border: none; */
+  border-bottom: 1px solid transparent;
   outline: none;
-  transition: 10s;
+  transition: 0.5s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
