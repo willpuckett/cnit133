@@ -31,6 +31,7 @@ const reset = () => {
 ### Extra Credit: Monetary Exchange Rates
 
 <Accordion>
+
 The exchange rates for 1 U.S. dollar in July 2019 were:
 
 |                  |        |
@@ -72,6 +73,7 @@ Monetary Exchange Rates
 Use jQuery to color the input text box to the right of 'Enter Amount of U.S. Dollars' when the user clicks in that box. For an example, see source code in: [https://hills.ccsf.edu/~cdasilva/cnit133/jquery8.html](https://hills.ccsf.edu/~cdasilva/cnit133/jquery8.html)
 
 Note: that the above values for rates can be displayed as faded text within a grey box, by using the attribute of disabled in the form input statements. An alternative is to use the attribute of readonly, which will display the rates as normal text within a grey box.
+
 </Accordion>
 
 <Accordion>The foreign exchange rates in July 2019.<br>Enter a U.S. dollar amount in the table below to see the corresponding foreign exchange values.</Accordion>
