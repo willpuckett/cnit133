@@ -1,0 +1,59 @@
+@import 'variables.sass'
+
+.button-row 
+  display: flex
+  justify-content: space-between
+  width: 100%
+  border: none
+  text-align: center
+  gap: 10px
+
+input, select, 
+textarea 
+  width: 100%
+  border-radius: 5px
+  border: 1px groove #d1f1fb
+  padding: 0.5em 10px
+  line-height: normal
+  -moz-appearance: textfield
+  flex-grow: 1
+  &:invalid 
+    background-color: #f6dff5
+  &:valid 
+    background-color: #d1f1fb
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    margin: 0
+  
+input[type="checkbox"],
+input[type="radio"] 
+  display: inline
+  width: auto  
+
+label > .label-body 
+  display: inline-block
+  margin-left: .5rem
+  font-weight: normal 
+
+.column table 
+  width: 90%
+  @media (max-width: 850px) 
+    border-collapse: collapse 
+    // table-layout: fixed
+    width: 100%
+
+label,
+legend 
+  display: inline-flex
+  padding-right: 10%
+
+th,
+td 
+  border-bottom: 1px solid $border
+  &:first-child 
+    padding-left: 7%
+  &:last-child 
+    padding-right: 7%
+  
+

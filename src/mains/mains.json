@@ -1,6 +1,0 @@
-{ 
-    "layout": "layouts/hw.njk",
-    "title": "Homework {{ page.fileSlug }}",
-    "permalink": "/hw{{ page.fileSlug }}.html",
-    "tags": "homework"
-}

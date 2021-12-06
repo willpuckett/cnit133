@@ -1,0 +1,85 @@
+@import "../node_modules/skeleton-css/css/normalize.css"
+@import "../node_modules/skeleton-css/css/skeleton.css"
+@import "forms.sass"
+
+@font-face 
+  font-family: "Raleway"
+  font-style: normal
+  font-weight: 300
+  src: local(""), url("/fonts/raleway-v22-latin-300.woff2") format("woff2"), url("/fonts/raleway-v22-latin-300.woff") format("woff")
+  // font-display: auto
+
+@font-face 
+  font-family: "Raleway"
+  font-style: normal
+  font-weight: 400
+  src: local(""), url("/fonts/raleway-v22-latin-regular.woff2") format("woff2"), url("/fonts/raleway-v22-latin-regular.woff") format("woff")
+  // font-display: auto
+@font-face 
+  font-family: "Raleway"
+  font-style: normal
+  font-weight: 600
+  src: local(""), url("/fonts/raleway-v22-latin-600.woff2") format("woff2"), url("/fonts/raleway-v22-latin-600.woff") format("woff")
+  // font-display: auto
+  
+:root
+  background-color: white
+  margin-top: 12%
+  @media (max-width: 550px)
+      margin-top: 22%
+
+#svelte 
+  // @apply .container
+  position: relative
+  width: 100%
+  max-width: 960px
+  margin: 0 auto
+  padding: 0 20px
+  box-sizing: border-box
+  @media (min-width: 400px) 
+      width: 95%
+      padding: 0
+  
+// reset Skeleton column sizing
+@media (min-width: 550px) 
+  #svelte 
+    width: 80%
+  .container 
+    width: default
+  .column,
+  .columns 
+    margin: 0 auto
+    &:first-child 
+      margin: 0 auto
+    &.one-half 
+      width: 100%
+    &.one-third 
+      width: 100%
+    
+// Implement columns @850px
+@media (min-width: 850px) 
+  .container 
+    width: 80%
+  .column,
+  .columns 
+    margin-left: 4%
+    &:first-child 
+      margin-left: 0
+    &.one-half 
+      width: 48%
+    &.one-third 
+      width: 30.6666666667%
+    &.two-thirds 
+      width: 65.3333333333%
+
+pre > code 
+  white-space: pre
+  overflow-y: scroll
+
+a:hover 
+  color: $secondary
+
+@media (max-width: 650px) 
+  .full-text 
+    display: none
+  
