@@ -7,15 +7,15 @@
     "errno": "ENOENT",
     "syscall": "spawn",
     "file": "sh",
-    "pkgid": "newmootrpootr@0.0.1",
+    "pkgid": "mootrpootr@0.0.1",
     "stage": "dev",
     "script": "svelte-kit dev --host",
-    "pkgname": "newmootrpootr",
+    "pkgname": "mootrpootr",
     "err": {
       "name": "pnpm",
-      "message": "newmootrpootr@0.0.1 dev: `svelte-kit dev --host`\nspawn ENOENT",
+      "message": "mootrpootr@0.0.1 dev: `svelte-kit dev --host`\nspawn ENOENT",
       "code": "ELIFECYCLE",
-      "stack": "pnpm: newmootrpootr@0.0.1 dev: `svelte-kit dev --host`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/puck/.nvm/versions/node/v17.2.0/lib/node_modules/pnpm/dist/pnpm.cjs:91462:22)\n    at ChildProcess.emit (node:events:390:28)\n    at maybeClose (node:internal/child_process:1062:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)"
+      "stack": "pnpm: mootrpootr@0.0.1 dev: `svelte-kit dev --host`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/puck/.nvm/versions/node/v17.2.0/lib/node_modules/pnpm/dist/pnpm.cjs:91462:22)\n    at ChildProcess.emit (node:events:390:28)\n    at maybeClose (node:internal/child_process:1062:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:301:5)"
     }
   },
   "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
