@@ -1,5 +1,5 @@
 {
-  "name": "newmootrpootr",
+  "name": "mootrpootr",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev --host",
@@ -27,6 +27,7 @@
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
+    "canvas-confetti": "^1.4.0",
     "cookie": "^0.4.1"
   }
 }

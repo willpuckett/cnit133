@@ -1,6 +1,6 @@
 <script> 
 import { onMount } from 'svelte';
-import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+import confetti from 'canvas-confetti';
 // import snow from 'https://cdn.skypack.dev/snow';
 	onMount(async () => {
         confetti();
@@ -13,6 +13,4 @@ import confetti from 'https://cdn.skypack.dev/canvas-confetti';
 
 #### congratulations
 
-
-
-you earned every minute of it....
+And happy holidays! ❄️ 🏂 🍧
