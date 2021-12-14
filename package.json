@@ -19,6 +19,7 @@
     "sass": "^1.44.0",
     "skeleton-css": "^2.0.4",
     "svelte": "^3.44.2",
+    "svelte-adapter-deno": "^0.3.2",
     "svelte-drag": "^2.3.2",
     "svelte-preprocess": "^4.9.8",
     "svelte-tooltip": "^1.2.0"
